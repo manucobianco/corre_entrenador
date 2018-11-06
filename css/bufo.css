@@ -1,0 +1,7 @@
+.bufo{
+  height: 20px;
+  width: 20px;
+  background-image: url('../sprites/pokebola.png');
+  background-size: cover;
+  display: none;
+}

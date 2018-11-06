@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/personaje.css">
+    <link rel="stylesheet" href="css/enemigo.css">
+    <link rel="stylesheet" href="css/pokemon.css">
+    <link rel="stylesheet" href="css/bufo.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <title>Corre Entrenador!</title>
+    <link rel="shortcut icon" href="img/poke-ball.png">
+  </head>
+  <body>
+    <nav>
+      <div class="nav_logo">
+        <img src="img/logo-pagina.png" alt="Logo">
+      </div>
+      <div class="nav_links">
+        <p>inicio</p>
+        <p>biblioteca</p>
+        <div class="nav_search">
+          <input type="text" placeholder="Buscar en tienda..."name="buscador">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+      <div class="nav_profile_card">
+        <img src="img/perfil.jpeg" alt="Imagen Perfil">
+        <p>nombre</p>
+        <p> | </p>
+        <p>Idioma</p>
+      </div>
+    </nav>
+    <div id="juegoContainerMax">
+      <div id="juegoContainer">
+        <div id="puntos"></div>
+        <div id="prado" class="prado_moviendo" ></div>
+        <div id="jugador" class="personaje_moving_up"></div>
+        <div class="bufo" id="bufo0"></div>
+        <div class="bufo" id="bufo1"></div>
+        <div class="bufo" id="bufo2"></div>
+        <div class="pokemon pokemon_corriendo_right" id="pokemon0"></div>
+        <div class="pokemon pokemon_corriendo_right" id="pokemon1"></div>
+        <div class="pokemon pokemon_corriendo_right" id="pokemon2"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo0"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo1"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo2"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo3"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo4"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo5"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo6"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo7"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo8"></div>
+        <div class="enemigo enemigo_corriendo" id="enemigo9"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="img/game_icono.png" class="img-thumbnail img-game">
+          <span class="game_title">Corre Entrenador!</span>
+          <br>
+          <span class="game_category">Juegos de Habilidad / Infinite scroll</span>
+          <br>
+          <span class="game_data">10 de noviembre de 2018 | 2025 Partidas</span>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 desc">
+          <h2 class="header-title">Detalles</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="description">
+            Corre entrenador!. Recuerda que no tienes pokemones para combatir, y el equipo rocket esta rondando, asi q trata de no meterte en problemas. Ademas, presta atención, hay algunas pokebolas en el camino q pueden servirte.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 desc">
+          <h2 class="header-title">controles</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="game-controls center">
+            <li>
+              <span class="type kb-generic-key">
+                <span class="key">A</span>
+              </span>
+              <span class="action">Izquierda</span>
+            </li>
+
+            <li>
+              <span class="type kb-generic-key">
+                <span class="key">D</span>
+              </span>
+              <span class="action">Derecha</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 desc">
+          <h2 class="header-title">Juegos similares</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <a href="#">
+            <figure class="figure">
+              <img src="img/agame1.jpg" class="figure-img img-thumbnail rounded" alt="another game 1">
+              <figcaption class="figure-caption">Subway Surfers</figcaption>
+            </figure>
+          </a>
+
+          <a href="#">
+            <figure class="figure">
+              <img src="img/agame2.jpg" class="figure-img img-thumbnail rounded" alt="another game 1">
+              <figcaption class="figure-caption">Red Panda Surfer</figcaption>
+            </figure>
+          </a>
+
+          <a href="">
+            <figure class="figure">
+              <img src="img/agame3.jpg" class="figure-img img-thumbnail rounded" alt="another game 1">
+              <figcaption class="figure-caption">Subway Surf</figcaption>
+            </figure>
+          </a>
+
+          <a href="#">
+            <figure class="figure">
+              <img src="img/agame4.jpg" class="figure-img img-thumbnail rounded" alt="another game 1">
+              <figcaption class="figure-caption">Skate Hooligans</figcaption>
+            </figure>
+          </a>
+
+          <a href="#">
+            <figure class="figure">
+              <img src="img/agame5.jpg" class="figure-img img-thumbnail rounded" alt="another game 1">
+              <figcaption class="figure-caption">Anngry Grant</figcaption>
+            </figure>
+          </a>
+
+          <a href="#">
+            <figure class="figure">
+              <img src="img/agame6.jpg" class="figure-img img-thumbnail rounded" alt="another game 1">
+              <figcaption class="figure-caption">Bart Bording</figcaption>
+            </figure>
+          </a>
+
+          <a href="#">
+            <figure class="figure">
+              <img src="img/agame7.jpg" class="figure-img img-thumbnail rounded" alt="another game 1">
+              <figcaption class="figure-caption">Ball vs Boxes</figcaption>
+            </figure>
+          </a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <hr/>
+    <footer class="main-footer">
+      <nav class="footer-nav">
+        <ul>
+          <li class="center">
+            <a title="Página principal de Minijuegos" href="#">
+              <img src="img/logo-pagina.png" style="width:200px;">
+            </a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h4>Explorar</h4>
+          </li>
+          <li>
+            <a href="#" title="Galería de trofeos">
+              Trofeos </a>
+          </li>
+          <li>
+            <a href="#" title="Juegos con logros">
+              Logros </a>
+          </li>
+          <li>
+            <a href="#" title="Comunidad">
+              Comunidad </a>
+          </li>
+          <li>
+            <a href="#" title="Centro de Avatares">
+              Centro de Avatares </a>
+          </li>
+          <li>
+            <a href="#" title="Multijugador">
+              Multijugador </a>
+          </li>
+          <li>
+            <a href="#" target="_blank" title="Minitorneos">
+              Winitorneos </a>
+          </li>
+          <li>
+            <a href="#" title="Eventos">
+              Eventos y novedades </a>
+          </li>
+
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Recursos</h4>
+          </li>
+          <li>
+            <a href="#" title="Developers Site">
+              Desarrolladores </a>
+          </li>
+          <li>
+            <a href="#" title="Afiliados">
+              Afiliados </a>
+          </li>
+          <li>
+            <a href="#" title="Media kit">
+              Media kit </a>
+          </li>
+          <li>
+            <a href="#" title="Mobile Site">
+              Versión móvil </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Soporte</h4>
+          </li>
+          <li>
+            <a target="_blank" href="#" title="Ayuda">
+              Ayuda </a>
+          </li>
+          <li>
+            <a href="#" title="Ayuda">
+              Sobre la experiencia </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Social</h4>
+          </li>
+          <li>
+            <a href="#" title="Facebook" target="_blank">Facebook</a>
+          </li>
+          <li>
+            <a href="#" title="Twitter" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="#" target="_blank" title="Google+" rel="publisher">Google+</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Internacional</h4>
+          </li>
+
+          <li>
+            <a hreflang="es" href="#">Winijuegos</a>
+          </li>
+          <li>
+            <a hreflang="en" href="#">Winiplay</a>
+          </li>
+          <li>
+            <a hreflang="it" href="#">Winigiochi</a>
+          </li>
+          <li>
+            <a hreflang="pt" href="#">Winijogos</a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <h4>Corporate</h4>
+          </li>
+          <li>
+            <a href="#" title="Términos de Uso">
+              Términos de Uso </a>
+          </li>
+          <li>
+            <a href="#" title="Privacidad">
+              Privacidad </a>
+          </li>
+          <li>
+            <a href="#" title="Cookies">
+              Cookies </a>
+          </li>
+          <li>
+            <a href="#" title="Empleo">
+              Empleo </a>
+          </li>
+          <li>
+            <a href="#" title="About">
+              About </a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="js/state.enum.js"></script>
+  <script src="js/bufo.js"></script>
+  <script src="js/vector.js"></script>
+  <script src="js/enemigo.js"></script>
+  <script src="js/jugador.js"></script>
+  <script src="js/pokemon.js"></script>
+  <script src="js/main.js"></script>
+</html>

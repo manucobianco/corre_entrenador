@@ -1,0 +1,47 @@
+@keyframes personaje-run-up {
+  0% { background-position: -256px -192px; }
+  100% { background-position: 0px -192px; }
+}
+
+#jugador{
+  width: 64px;
+  height: 64px;
+  /* margin: 400px auto auto auto; */
+  background: url('../sprites/sprite_sheet_pokemon.png') left center;
+  background-position: -256px -192px !important;
+  position: absolute;
+}
+
+.personaje_moving_up{
+  animation: personaje-run-up .5s steps(4) infinite;
+}
+
+.god{
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}

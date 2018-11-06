@@ -1,0 +1,24 @@
+@keyframes pokemon-run-left {
+  0% { background-position: -429px -246px; }
+  100% { background-position: -571px -246px; }
+}
+@keyframes pokemon-run-right {
+  0% { background-position: -429px -628px; }
+  100% { background-position: -571px -628px; }
+}
+.pokemon{
+  width: 70px;
+  height: 100px;
+  display: none;
+  background: url('../sprites/snorlax.png') left center;
+  background-size: 1089px 861px;
+}
+.pokemon_corriendo_left{
+  background-position: -429px -246px !important;
+  animation: pokemon-run-left .5s steps(2) infinite;
+}
+
+.pokemon_corriendo_right{
+  background-position: -429px -628px !important;
+  animation: pokemon-run-right .5s steps(2) infinite;
+}

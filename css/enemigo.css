@@ -1,0 +1,15 @@
+@keyframes enemigo-run-down {
+  0% { background-position: 62px -20px; }
+  100% { background-position: 248px -20px; }
+}
+.enemigo{
+  width: 64px;
+  height: 64px;
+  display: none;
+  /* margin: 300px auto auto auto; */
+  background: url('../sprites/enemigo-pokemon.png') left center;
+  background-position: 124px -20px;
+}
+.enemigo_corriendo{
+  animation: enemigo-run-down .5s steps(3) infinite;
+}

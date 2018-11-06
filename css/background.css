@@ -1,0 +1,18 @@
+@keyframes mover-background {
+  from {
+    background-position: 0px 0px;
+  }
+  to{
+    background-position: 0 3008px;
+  }
+}
+#prado{
+  background-image:url('../sprites/prado.png');
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-repeat: repeat-y;
+}
+
+.prado_moviendo{
+  animation: mover-background 30s linear infinite;
+}
