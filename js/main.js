@@ -170,6 +170,11 @@ document.addEventListener('keyup', function(event) {
 
 
 function start(){
+  document.getElementById('arranca').style.display = 'none';
+  document.getElementById('prado').className='prado_moviendo';
+  document.getElementById('cartelito').style.display = 'none';
+  jugador.div.style.display = '';
+
   if (!requestId) {
     requestId = requestAnimationFrame(mainLoop);
   }
@@ -185,18 +190,17 @@ function stop() {
     clearInterval(intervalEnemigosId);
     clearInterval(intervalPokemonesId);
     clearInterval(intervalBufosId);
-    confirm('OH OH, te alcanzaron. Corriste '+puntos.toFixed(2)+' kms. Intentalo de nuevo!');
-    location.reload();
-    // for (var i = 0; i < enemigos.length; i++) {
-    //   enemigos[i].state = State.HIDDEN;
-    //   enemigos[i].div.className = 'enemigo';
-    // }
-    // for (var i = 0; i < enemigo.length; i++) {
-    //   enemigo[i].state = State.HIDDEN;
-    //   enemigo[i].div.className = 'pokemon';
-    // }
-    // jugador.div.className = '';
+    document.getElementById('perdio').innerHTML = '<p>OH OH, te alcanzaron!</p><p><b>Corriste '+puntos.toFixed(2)+' kms.</b></p><p><button class="btn"type="button" onclick="location.reload();">Intentalo de nuevo!</button></p>';
+
+    for (var i = 0; i < enemigos.length; i++) {
+      enemigos[i].state = State.HIDDEN;
+      enemigos[i].div.className = 'enemigo';
+    }
+    jugador.div.className = '';
+    document.getElementById('prado').className='';
+    document.getElementById('cartelito').style.display = '';
+    document.getElementById('perdio').style.display = 'inline-grid';
   }
 }
-
-start();
+jugador.div.style.display = 'none';
+document.getElementById('prado').className='';

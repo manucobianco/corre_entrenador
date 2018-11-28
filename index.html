@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/bufo.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="shortcut icon" href="favicon.png">
 
     <title>Corre Entrenador!</title>
@@ -24,7 +25,7 @@
         <p>inicio</p>
         <p>biblioteca</p>
         <div class="nav_search">
-          <input type="text" placeholder="Buscar en tienda..."name="buscador">
+          <input type="text" name="buscador">
           <i class="fas fa-search"></i>
         </div>
       </div>
@@ -35,6 +36,26 @@
         <p>Idioma</p>
       </div>
     </nav>
+    <div id="cartelito" class="cartelito">
+      <div class="borde">
+        <div id="arranca">
+          <span><b>Listo para correr?</b></span>
+          <br/>
+          <span>Cuidado:</span>
+          <br/>
+          <img class="imgGuia" src="img/enemigo.png">
+          <img class="imgGuia" src="img/snorlax.png">
+          <br/>
+          <span>Recoge:</span>
+          <br/>
+          <img class="imgGuia" src="img/pokebola.png">
+          <br/>
+          <button id="btnStart" type="button" class="btn" onclick="start();">A Correr!</button>
+        </div>
+        <div id="perdio">
+        </div>
+      </div>
+    </div>
     <div id="juegoContainerMax">
       <div id="juegoContainer">
         <div id="puntos"></div>
@@ -203,7 +224,7 @@
           </li>
           <li>
             <a href="#" target="_blank" title="Minitorneos">
-              Winitorneos </a>
+              Raviztorneos </a>
           </li>
           <li>
             <a href="#" title="Eventos">
@@ -269,16 +290,16 @@
           </li>
 
           <li>
-            <a hreflang="es" href="#">Winijuegos</a>
+            <a hreflang="es" href="#">Ravizjuegos</a>
           </li>
           <li>
-            <a hreflang="en" href="#">Winiplay</a>
+            <a hreflang="en" href="#">Ravizplay</a>
           </li>
           <li>
-            <a hreflang="it" href="#">Winigiochi</a>
+            <a hreflang="it" href="#">Ravizgiochi</a>
           </li>
           <li>
-            <a hreflang="pt" href="#">Winijogos</a>
+            <a hreflang="pt" href="#">Ravizjogos</a>
           </li>
         </ul>
 
